@@ -1,0 +1,666 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+* p,
+* b {
+  font-family: sans-serif !important;
+}
+body {
+  background-color: rgb(242, 255, 245);
+  overflow-x: hidden !important;
+}
+.d-none {
+  display: none;
+}
+
+/*** Navbar ***/
+nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  padding: 7px 70px;
+  align-items: center;
+  color: #fff;
+  justify-content: space-around;
+  background-color: rgb(0, 191, 48);
+  z-index: 2;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+nav .logo img {
+  width: 65px;
+}
+nav .logo h1 {
+  width: 100%;
+  font-size: 25px;
+  margin-left: 5px;
+  letter-spacing: 0px;
+}
+
+nav .search {
+  display: block;
+  width: 50%;
+}
+nav .search .row {
+  display: flex;
+  padding: 5px;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+nav .search input {
+  width: 99%;
+  height: auto;
+  border: none;
+  border-bottom: solid 2px rgb(0, 191, 48);
+  outline: none;
+}
+nav .search button {
+  border: none;
+  color: #fff;
+  padding: 7px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+  background-color: rgb(3, 211, 55);
+  transition: 0.1s;
+}
+nav .search button:hover {
+  background-color: rgb(68, 221, 107);
+}
+nav .search span {
+  padding-right: 7px;
+}
+nav .search span a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+nav .about a {
+  padding: 20px;
+  text-align: center;
+}
+nav .about i {
+  color: #fff;
+  font-size: 30px;
+}
+/* Akhir Navbar */
+
+/* Parallax */
+.parallax {
+  background: url(../img/parallax.png);
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  opacity: 0.75;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.parallax-text {
+  position: absolute;
+  color: #fff;
+  font-size: 50px;
+  top: 45%;
+  opacity: 1;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  text-shadow: 0 0 10px #000;
+}
+/* Akhir Parallax */
+
+/* content */
+.content {
+  padding-top: 40px;
+  background-color: #fff;
+}
+.content h1 {
+  margin-bottom: 10px;
+}
+.content .title {
+  padding: 40px 270px;
+  padding-bottom: 70px;
+  line-height: 20px;
+  text-align: center;
+}
+.content .title h1 {
+  font-size: 26pt;
+  font-weight: 1000;
+  margin-bottom: 20px;
+}
+
+.parallax-medsos {
+  background: url(../img/bg-medsos.jpeg);
+  width: 100vw;
+  filter: grayscale(0.2);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 9vh 25vw;
+}
+.content .parallax-edit-gambar {
+  background: url(../img/bg-editor-gambar.jpg);
+  width: 100vw;
+  filter: grayscale(0.2);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 9vh 25vw;
+}
+.content .parallax-edit-video {
+  background: url(../img/bg-editor-video.jpg);
+  width: 100vw;
+  filter: grayscale(0.2);
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 9vh 25vw;
+}
+.content .text-definisi {
+  color: #fff;
+  padding: 10px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: rgba(17, 17, 17, 0.4);
+}
+.content .text-definisi h1 {
+  font-size: 18pt;
+  text-shadow: 0 0 1px #111;
+}
+.content .text-definisi p {
+  font-size: 11pt;
+  text-shadow: 0 0 1px #111;
+  letter-spacing: 0.5px;
+}
+.content .container {
+  display: flex;
+  margin: 2% 7%;
+}
+.content img {
+  width: 20em;
+  margin-right: 20px;
+}
+.content .row-text {
+  margin-top: 10px;
+  padding-right: 150px;
+}
+.content .row-text h2 {
+  margin-bottom: 10px;
+}
+.content .row-text p {
+  font-size: 11pt;
+  line-height: 20px;
+}
+.content .row-text p a {
+  text-decoration: none;
+}
+.content .edit-video {
+  padding: 1px;
+  margin-bottom: 20px;
+}
+/* Akhir Content */
+
+/* Download */
+.download {
+  background-color: #fff;
+  margin: 20px 100px;
+  border-radius: 5px;
+  padding: 40px;
+  padding-left: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.418);
+}
+.download h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.download-container h2 {
+  margin-bottom: 15px;
+}
+.download-container .flex {
+  display: contents;
+}
+.download-container ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+}
+.download-container li {
+  width: 12vw;
+  padding: 14px;
+  display: block;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 2px #111;
+}
+.download-container li img {
+  width: 9vw;
+}
+.download-container h4 {
+  margin: 0 0 9px;
+}
+
+.download-container a {
+  position: relative;
+  width: 8vw;
+  display: flex;
+  margin: 5px auto 0;
+  color: #fff;
+  padding: 6px 0;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: rgb(3, 211, 55);
+}
+.download-container a:hover {
+  transform: scale(1.05);
+}
+.download-container a p {
+  margin: auto;
+}
+.download-container a p i {
+  padding-right: 2px;
+}
+
+/* Akhir Download */
+
+/* Footer */
+footer {
+  background: rgb(1, 193, 49);
+  height: auto;
+  width: 100vw;
+  color: #fff;
+}
+.footer-content {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20vw;
+}
+.footer-content h3 {
+  font-size: 1.8em;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 2em;
+  text-shadow: 0 0 2px #111;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 19px;
+  font-size: 14px;
+  text-shadow: 0 0 2px #111;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1.2rem 0;
+}
+.socials li {
+  margin: 0 14px;
+}
+.socials a {
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.6rem;
+  transition: color 0.4s ease;
+}
+.socials a:hover i {
+  color: aqua;
+  transform: scale(1.2);
+}
+.footer-content p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-content span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+.footer-bottom {
+  background: rgb(0, 179, 45);
+  width: 100vw;
+  padding: 20px 0;
+  box-shadow: -1px -1px 1px rgb(0, 131, 33);
+  text-align: center;
+}
+.footer-bottom a {
+  border-bottom: 1px solid #fff;
+  color: rgb(231, 255, 237);
+  text-decoration: none;
+  transition: 0.1s;
+}
+.footer-bottom a:hover {
+  border-bottom: 1px solid aqua;
+  color: aqua;
+}
+.footer-bottom p i {
+  font-size: 17px;
+  padding-right: 3px;
+  color: rgb(0, 0, 0);
+}
+/* Akhir Footer */
+
+@media screen and (max-width: 1125px) {
+  .download-container li {
+    width: 13vw;
+  }
+  .download-container a p {
+    font-size: 10pt;
+  }
+}
+
+@media (max-width: 1000px) {
+  .download {
+    padding: 30px 30px;
+  }
+  .download-container li {
+    width: 14vw;
+  }
+  .download-container a {
+    width: 100%;
+  }
+  .d-nonet {
+    display: none;
+  }
+}
+
+/* Responsive Tablet */
+@media (max-width: 875px) {
+  .d-nonet {
+    display: none;
+  }
+  /* Navbar */
+  nav {
+    padding: 7px 15px;
+  }
+  nav .logo img {
+    width: 60px;
+  }
+  nav .logo h1 {
+    font-size: 21px;
+    letter-spacing: 1px;
+  }
+  nav .search {
+    width: 45%;
+  }
+  /* Akhir Navbar */
+
+  /* Content */
+  .content .title,
+  .parallax-edit-gambar,
+  .parallax-edit-video,
+  .parallax-medsos {
+    padding: 40px 100px !important;
+  }
+  .content .container {
+    margin-bottom: 20px;
+  }
+  .content img {
+    width: 17em;
+  }
+  .content .row-text {
+    padding-right: 30px;
+  }
+  /* Akhir Content */
+
+  /* Download */
+  .download {
+    margin: 0 50px;
+  }
+  .download ul {
+    display: block;
+  }
+  .download-container .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .download-container li {
+    width: 19vw;
+    margin-bottom: 10px;
+  }
+  .download-container li img {
+    width: 10vw;
+  }
+  .download-container h4 {
+    margin: 0 0 5px;
+  }
+  .download-container a {
+    width: 11vw;
+  }
+  .download-container a p {
+    font-size: 10pt;
+  }
+  /* Akhir Download */
+}
+/* Responsive Mobaile */
+@media screen and (max-width: 700px) {
+  .d-nonem {
+    display: none;
+  }
+  /* Navbar */
+  nav .logo img {
+    width: 50px;
+  }
+  nav .logo h1 {
+    font-size: 15px;
+  }
+  nav .search .row {
+    height: 35px;
+  }
+  nav .search button {
+    padding: 0 9px;
+  }
+  nav .search span a {
+    font-size: 14px;
+  }
+  /* Akhir Navbar */
+
+  /* Content */
+  .content {
+    padding-top: 0;
+  }
+  .content .title,
+  .parallax-edit-gambar,
+  .parallax-edit-video,
+  .parallax-medsos {
+    padding: 40px 45px !important;
+  }
+  .content .container {
+    display: block;
+    padding: 0 15.5vw;
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .content img {
+    width: 10em;
+    margin-right: 10px;
+  }
+  .content .row-text {
+    margin-top: 0px;
+    padding-right: 0;
+  }
+  .content .row-text h2 {
+    margin-bottom: 1px;
+    font-size: 16pt;
+  }
+  .content .row-text p {
+    font-size: 11.5pt;
+  }
+  /* Akhir Content */
+
+  /* Download */
+  .download {
+    margin: 0 40px;
+    padding: 25px;
+  }
+  .download-container .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .download-container ul {
+    display: block !important;
+  }
+  .download-container li {
+    width: 25vw;
+  }
+  .download-container a {
+    width: 100%;
+  }
+  /* Akhir Download */
+}
+
+/* Responsive bohraroh */
+@media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .logo h1 {
+    font-size: 14pt;
+  }
+  nav .about a {
+    padding: 0;
+  }
+  nav .about button {
+    display: contents;
+    cursor: pointer;
+  }
+  nav .about i {
+    font-size: 26px;
+    padding: 0 10px;
+  }
+  .d-none-search {
+    display: none !important;
+  }
+  .d-noneall {
+    display: none;
+  }
+
+  /* Content */
+  .content .row-text h2 {
+    margin-bottom: 1px;
+    font-size: 15pt;
+  }
+  .content .row-text p {
+    font-size: 10.5pt;
+  }
+
+  /* Download */
+  .download {
+    margin: 0 20px;
+    padding: 10px;
+  }
+  .download-container li {
+    width: 30vw;
+  }
+
+  .download-container li a {
+    width: 19vw;
+  }
+
+  .footer-content {
+    height: auto;
+  }
+  .footer-content {
+    padding: 0 20vw 0 19vw;
+  }
+  .footer-content h3 {
+    font-size: 20pt;
+    line-height: 40px;
+  }
+  .footer-content p {
+    font-size: 10pt;
+    line-height: 15px;
+  }
+  .footer-bottom p {
+    font-size: 9.5pt;
+  }
+}
+
+/* Responsive Mobaile q */
+@media screen and (max-width: 450px) {
+  nav {
+    height: 60px !important;
+    padding: 5px 15px;
+    box-shadow: 0 0 2px #111;
+  }
+  nav i {
+    padding: 15px 10px !important;
+  }
+  nav img {
+    width: 100%;
+  }
+  .parallax-text {
+    top: 38%;
+  }
+  .content .container {
+    margin-top: 0px;
+    padding: 20px 55.8px;
+  }
+  .content .container img {
+    width: 200px;
+  }
+  .content .text-definisi {
+    border-radius: 10px;
+  }
+  .download {
+    margin: 10px 20px;
+  }
+  .download-container ul .flex {
+    display: block;
+  }
+  .download-container ul li {
+    width: 75vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 10px;
+  }
+  .download-container ul li h4 {
+    font-size: 10.5pt;
+    margin: 0;
+  }
+  .download-container ul li p {
+    margin: auto 0;
+    font-size: 8.5pt;
+  }
+  .download-container li h4 {
+    margin-top: 0;
+  }
+  .download-container li a {
+    position: absolute;
+    margin-top: 3.5vh;
+    padding: 2px 0;
+    margin-left: 20vw;
+  }
+  .download-container li a p {
+    margin: 0 auto;
+  }
+  .download-container li a p .fa {
+    display: none;
+  }
+  .footer-content {
+    padding: 0 10vw;
+  }
+}
